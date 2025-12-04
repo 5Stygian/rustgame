@@ -3,9 +3,10 @@ use ggez::graphics::{ self, Color };
 use ggez::event::{ self, EventHandler };
 
 mod util;
+use util::color::CSS3;
 
 fn main() {
-    let (mut ctx, event_loop) = ContextBuilder::new("my_game", "5Stygian")
+    let (mut ctx, event_loop) = ContextBuilder::new("rustgame", "5Stygian")
         .build()
         .expect("aieee, could not create ggez context!");
 
