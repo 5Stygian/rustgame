@@ -3,6 +3,11 @@ name = "rustgame"
 version = "0.1.0"
 authors = [ "5Stygian" ]
 edition = "2024"
+license = "CC-BY-SA-4.0"
+publish = false
+
+[profile.dev]
+lto = "fat"
 
 [dependencies]
 ggez = "0.9.3"
