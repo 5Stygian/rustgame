@@ -1,5 +1,6 @@
 use ggez::graphics::Color;
 
+/// A module that contians all CSS3 color names. 
 pub mod CSS3 {
     pub const ALICEBLUE            = Color::from_rgb(240, 248, 255);
     pub const ANTIQUEWHITE         = Color::from_rgb(250, 235, 215);
