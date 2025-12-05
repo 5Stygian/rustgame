@@ -3,7 +3,6 @@ use ggez::graphics::{ self, Color };
 use ggez::event::{ self, EventHandler };
 
 mod util;
-use util::color::CSS3;
 
 fn main() {
     let (mut ctx, event_loop) = ContextBuilder::new("rustgame", "5Stygian")
@@ -38,7 +37,7 @@ impl EventHandler for MyGame {
             ctx, 
             100.0, 100.0, 
             200.0, 300.0,
-            Color::from_rgb(255, 0, 0)
+            util::color::CSS3::RED,
         );
 
         canvas.draw(&rect, graphics::DrawParam::default());
